@@ -1,0 +1,15 @@
+---
+permalink: '/search.json'
+---
+[
+  {% for article in collections.blog %} 
+  { 
+    "title":"{{ article.data.title }}", 
+    "url":"{{ article.url | url }}",
+    "content": {{ article.templateContent | dump | safe }}
+    
+  }
+  {% if loop.last == false %},{% endif %} {% endfor %}
+
+]
+

@@ -1,0 +1,15 @@
+---
+layout: layout-page.njk
+title: Página de Artículos
+description: Meta Descripción de la página de Artículos
+---
+
+<h1>{{ title }}</h1>
+<h2>Artículos del blog ordenados alfabeticamente</h2>
+<ul>
+  {% for article in collections.blog %}
+    <li><a href="{{ article.url }}">{{ article.data.title }}</a></li>
+  {% endfor %}
+</ul>
+<hr />
+

@@ -1,0 +1,19 @@
+{
+  "name": "final_progra",
+  "version": "1.0.0",
+  "description": "Proyecto final para la materia de programacion que consiste en la creacion de una wiki",
+  "main": ".eleventy.js",
+  "scripts": {
+    "install": "npm install @11ty/eleventy --save-dev",
+    "start":"npx @11ty/eleventy --serve --port=7777",
+    "clean":" rmdir /s /q docs",
+    "deploy":"npx @11ty/eleventy --pathprefix=/",
+    "deploy-subdomain":"npx @11ty/eleventy --pathprefix=/final_progra/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
