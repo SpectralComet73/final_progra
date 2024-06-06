@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   let search_term = '';
 
   // Cargar datos del JSON
-  fetch('/search.json')
+  fetch('/final_progra/search.json')
     .then(response => response.json())
     .then(data_server => {
       data = data_server;
