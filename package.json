@@ -1,17 +1,22 @@
+
 {
   "name": "final_progra",
   "version": "1.0.0",
-  "description": "Proyecto final para la materia de programacion que consiste en la creacion de una wiki",
+  "description": "Proyecto final para la meteria de programacion que consiste en la creacion de una wiki",
   "main": ".eleventy.js",
   "scripts": {
     "install": "npm install @11ty/eleventy --save-dev",
-    "start":"npx @11ty/eleventy --serve --port=7777",
-    "clean":" rmdir /s /q docs",
+    "start": "npx @11ty/eleventy --serve --port=7777",
+    "clean": "rm -rf docs",
     "deploy": "npx @11ty/eleventy --pathprefix=/",
     "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/final_progra/"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "github pages"
+  ],
+  "author": "Carlos Alexis Rendon Sierra <rendon.sierra.carlos.alexis@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
